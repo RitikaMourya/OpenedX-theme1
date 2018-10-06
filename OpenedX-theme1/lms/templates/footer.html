@@ -17,43 +17,15 @@
       dir=${bidi}
     % endif
   >
-    <div class="colophon">
-
-      <div class="wrapper-logo">
-        <p>
-          <a href="/">
-            ## The default logo is a placeholder.
-            ## You can either replace this link entirely or update
-            ## the FOOTER_ORGANIZATION_IMAGE in Django settings.
-            ## If you customize FOOTER_ORGANIZATION_IMAGE, then the image
-            ## can be included in the footer on other sites
-            ## (e.g. a blog or marketing front-end) to provide a consistent
-            ## user experience.  See the branding app for details.
-            <img alt="organization logo" src="${static.url['images/logo.png']}">
-          </a>
-        </p>
-      </div>
-	  
+    <div class="colophon" style="width:auto">
         <nav class="nav-colophon">
             <ol>
+                <li>VidyatechedX</li>
                 <li><a href="https://vidyatech.com/index.php">About</a></li>
                 <li><a href="https://vidyatech.com/careers.html">Careers</a></li>
                 <li><a href="https://vidyatech.com/index.php#contact">Contact</a></li>
             </ol>
         </nav>
-	  
-      ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-      <p class="copyright">${footer['copyright']}</p>
-
-      <nav class="nav-legal" aria-label="${_('Legal')}">
-        <ul>
-          % for item_num, link in enumerate(footer['legal_links'], start=1):
-            <li class="nav-legal-0${item_num}">
-              <a href="${link['url']}">${link['title']}</a>
-            </li>
-          % endfor
-        </ul>
-      </nav>
     </div>
 
     ## Please leave this link and use one of the logos provided
