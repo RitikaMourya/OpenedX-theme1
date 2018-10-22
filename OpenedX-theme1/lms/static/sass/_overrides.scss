@@ -103,9 +103,10 @@ $blue: rgb(94, 0, 0);
         .wrapper-logo, .nav-colophon, p.copyright, nav.nav-legal {
             float:left;
         }
-
-        .footer-about-openedx{
-            float: right;
-        }
     }
+
+    footer#footer-openedx .footer-about-openedx{
+            float: right;
+            padding-top: 10px;
+        }
 }
